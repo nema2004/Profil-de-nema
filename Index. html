@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil de Nèma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding: 30px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur mon profil</h1>
+
+    <!-- Photo de profil -->
+    <img src="https://www.facebook.com/photo.php?fbid=599382289418290&set=a.106019358754588&type=3&mibextid=rS40aB7S9Ucbxw6v" alt="Photo de Nèma">
+    <!-- À propos de moi -->
+    <div class="section">
+        <h2>À propos de moi</h2>
+        <p>Je m'appelle Nèma Gbilémou. Étudiant en Génie Informatique à l'université Barack Obama. Passionné de réseaux, systèmes et développement web.</p>
+    </div>
+
+    <!-- Mes projets -->
+    <div class="section">
+        <h2>Mes projets</h2>
+        <ul>
+            <li>Création de ce site web personnel</li>
+            <li>Début de blog pour étudiants en informatique</li>
+            <li>Apprentissage du langage C</li>
+        </ul>
+    </div>
+
+    <!-- Bouton de contact -->
+    <div class="section">
+        <h2>Me contacter</h2>
+        <a href="https://wa.me/+224623084207" target="_blank">
+            <button>Me contacter sur WhatsApp</button>
+        </a>
+    </div>
+
+</body>
+</html>
