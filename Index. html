@@ -44,7 +44,7 @@
     <h1>Bienvenue sur mon profil</h1>
 
     <!-- Photo de profil -->
-    <img src="https://www.facebook.com/photo.php?fbid=599382289418290&set=a.106019358754588&type=3&mibextid=rS40aB7S9Ucbxw6v" alt="Photo de Nèma">
+    <img src="https://via.placeholder.com/150" alt="Photo de Nèma">
     <!-- À propos de moi -->
     <div class="section">
         <h2>À propos de moi</h2>
