@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil de Nèma</title>
+  <style>
+    :root {
+      --primary-color: #1e90ff;
+      --bg-color: #121212;
+      --section-bg: #1f1f1f;
+      --text-color: #f5f5f5;
+      --accent: #4fc3f7;
+    }
+
+    body.light {
+      --bg-color: #f0f0f0;
+      --section-bg: #ffffff;
+      --text-color: #222222;
+      --accent: #1e90ff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background-color: var(--section-bg);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    #mode-toggle {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    section {
+      background-color: var(--section-bg);
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      animation: fadeIn 1s ease-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.3s; }
+    section:nth-of-type(2) { animation-delay: 0.6s; }
+    section:nth-of-type(3) { animation-delay: 0.9s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img {
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      display: block;
+      margin: 10px auto;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 6px;
+      border: none;
+      background-color: #333;
+      color: white;
+    }
+
+    body.light form input,
+    body.light form textarea {
+      background-color: #ddd;
+      color: #222;
+    }
+
+    form input[type="submit"] {
+      background-color: var(--primary-color);
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #187bcd;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #0d0d0d;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    body.light footer {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      img {
+        width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur le profil de Nèma</h1>
+    <nav>
+      <ul>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="mode-toggle">Changer de mode</button>
+    </nav>
+  </header>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>Je m'appelle <strong>Nèma Gbilémou</strong>, étudiant en <em>Génie Informatique</em> à l'université Barack Obama de Guinée.</p>
+    <img src="https://via.placeholder.com/150" alt="Photo de Nèma" width="150">
+  </section>
+
+  <section id="competences">
+    <h2>Mes compétences</h2>
+    <ul>
+      <li>HTML5 / CSS3</li>
+      <li>Réseaux et Systèmes</li>
+      <li>Programmation en C</li>
+      <li>Maintenance informatique</li>
+    </ul>
+
+    <h3>Compétences techniques</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Technologie</th>
+          <th>Niveau</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Avancé</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Débutant</td>
+        </tr>
+        <tr>
+          <td>Linux</td>
+          <td>Intermédiaire</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-moi</h2>
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <input type="submit" value="Envoyer">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nèma Gbilémou. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("mode-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+    });
+  </script>
+</body>
+</html>
